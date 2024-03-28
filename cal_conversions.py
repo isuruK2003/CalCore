@@ -30,7 +30,7 @@ class Conversions():
                 return latex_expression
         return expression
 
-    def evaluate(self, val:(int, float, list), n:int=3):
+    def evaluate(self, val, n:int=3):
         if val:            
             if not isinstance(val, (list, tuple)):
                 return val.evalf(n=n)
